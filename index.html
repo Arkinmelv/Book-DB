@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <title>Book CRUD</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body class="p-4">
+    <h1 class="text-4xl text-blue-900 font-bold">BOOK DATABASE</h1>
+    <div id="app" class="mb-4"></div>
+    <button id="addButton" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+        Add Book
+    </button>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="bookForm">
+                <input type="text" id="authorInput" placeholder="Author" required>
+                <input type="text" id="countryInput" placeholder="Country" required>
+                <input type="text" id="imageLinkInput" placeholder="Image Link" required>
+                <input type="text" id="languageInput" placeholder="Language" required>
+                <input type="text" id="linkInput" placeholder="Link" required>
+                <input type="number" id="pagesInput" placeholder="Pages" required>
+                <input type="text" id="titleInput" placeholder="Title" required>
+                <input type="number" id="yearInput" placeholder="Year" required>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="updatedModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="updateForm">
+                <!-- Input fields for Author, Country, ImageLink, Language, Link, Pages, Title, Year -->
+                <input type="text" id="authorInputUpdate" placeholder="Author" required>
+                <input type="text" id="countryInputUpdate" placeholder="Country" required>
+                <input type="text" id="imageLinkInputUpdate" placeholder="Image Link" required>
+                <input type="text" id="languageInputUpdate" placeholder="Language" required>
+                <input type="text" id="linkInputUpdate" placeholder="Link" required>
+                <input type="number" id="pagesInputUpdate" placeholder="Pages" required>
+                <input type="text" id="titleInputUpdate" placeholder="Title" required>
+                <input type="number" id="yearInputUpdate" placeholder="Year" required>
+                <button type="submit">Update</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
